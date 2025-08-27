@@ -55,6 +55,9 @@ gem "httparty"
 # Anthropic AI API client
 gem "anthropic"
 
+# Authentication
+gem "bcrypt", "~> 3.1.7"
+
 # Background jobs (already included solid_queue)
 # gem "sidekiq"
 

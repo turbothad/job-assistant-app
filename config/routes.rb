@@ -1,6 +1,26 @@
 Rails.application.routes.draw do
-  get "chat/index"
-  get "chat/create"
+  # Root route
+  root "home#index"
+  
+  # Authentication routes
+  get "signup", to: "users#new"
+  get "login", to: "sessions#new"
+  post "signup", to: "users#create"
+  post "login", to: "sessions#create"
+  delete "logout", to: "sessions#destroy"
+  
+  # User routes
+  resources :users, only: [:new, :create, :show]
+  resources :sessions, only: [:new, :create, :destroy]
+  
+  # Main routes
+  get "chat", to: "chat#index"
+  resources :chat, only: [:index, :create]
+  
+  # Mount Action Cable
+  mount ActionCable.server => '/cable'
+  
+  # API routes
   namespace :api do
     namespace :v1 do
       get "job_applications/create"
@@ -11,12 +31,7 @@ Rails.application.routes.draw do
       get "chat/index"
     end
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
+  
+  # Health check
   get "up" => "rails/health#show", as: :rails_health_check
-
-  # Defines the root path route ("/")
-  # root "posts#index"
 end
