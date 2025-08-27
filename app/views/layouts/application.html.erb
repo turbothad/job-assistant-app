@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Job Assistant</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <!-- No need for complex asset pipeline, just use CDN for styling -->
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'anthropic-orange': '#FF6B35',
+              'anthropic-dark': '#1A1A1A',
+              'anthropic-gray': '#2D2D2D'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <%= link_to root_path, class: "flex items-center space-x-2" do %>
+              <div class="w-8 h-8 bg-anthropic-orange rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">AI</span>
+              </div>
+              <span class="text-xl font-semibold text-gray-900">Job Assistant</span>
+            <% end %>
+          </div>
+          
+          <div class="flex items-center space-x-4">
+            <%= link_to "Chat", chat_path, class: "text-gray-700 hover:text-anthropic-orange px-3 py-2 rounded-md text-sm font-medium" %>
+            
+            <% if logged_in? %>
+              <%= link_to "Profile", user_path(current_user), class: "text-gray-700 hover:text-anthropic-orange px-3 py-2 rounded-md text-sm font-medium" %>
+              <span class="text-gray-500">Hi, <%= current_user.first_name %>!</span>
+              <%= link_to "Logout", logout_path, method: :delete, class: "bg-gray-100 text-gray-700 hover:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium" %>
+            <% else %>
+              <%= link_to "Login", login_path, class: "text-gray-700 hover:text-anthropic-orange px-3 py-2 rounded-md text-sm font-medium" %>
+              <%= link_to "Sign Up", signup_path, class: "bg-anthropic-orange text-white hover:bg-orange-600 px-3 py-2 rounded-md text-sm font-medium" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Flash Messages -->
+    <% if notice %>
+      <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4 mx-4">
+        <%= notice %>
+      </div>
+    <% end %>
+    
+    <% if alert %>
+      <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 mx-4">
+        <%= alert %>
+      </div>
+    <% end %>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <%= yield %>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="text-center text-gray-500 text-sm">
+          <p>AI Job Assistant - Discover hidden job opportunities powered by AI</p>
+          <p class="mt-2">Built with Ruby on Rails • Powered by Anthropic Claude</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

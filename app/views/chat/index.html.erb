@@ -1,0 +1,185 @@
+<div class="max-w-4xl mx-auto px-4 py-8">
+  <!-- Chat Header -->
+  <div class="text-center mb-8">
+    <h1 class="text-3xl font-bold text-gray-900 mb-2">AI Job Assistant</h1>
+    <p class="text-gray-600">Ask me anything about jobs, careers, or let me help you find your next opportunity!</p>
+  </div>
+
+  <!-- Chat Container -->
+  <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" style="height: 600px;">
+    <!-- Chat Messages -->
+    <div id="chat-messages" class="flex-1 p-6 overflow-y-auto bg-gray-50" style="height: 500px;">
+      <!-- Welcome Message -->
+      <div class="mb-6">
+        <div class="flex items-start space-x-3">
+          <div class="flex-shrink-0">
+            <div class="w-8 h-8 bg-anthropic-orange rounded-full flex items-center justify-center">
+              <span class="text-white text-sm font-medium">AI</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="bg-white rounded-lg px-4 py-3 shadow-sm border border-gray-200">
+              <p class="text-gray-800">
+                👋 Hi! I'm your AI job assistant. I can help you:
+              </p>
+              <ul class="mt-2 text-gray-700 text-sm space-y-1">
+                <li>• Find jobs based on your skills and preferences</li>
+                <li>• Search for remote work opportunities</li>
+                <li>• Get career advice and application tips</li>
+                <li>• Discover hidden job market opportunities</li>
+              </ul>
+              <p class="mt-3 text-gray-600 text-sm">
+                Try asking: "Find me Ruby on Rails jobs" or "What remote software engineering positions are available?"
+              </p>
+            </div>
+            <div class="text-xs text-gray-500 mt-1">Just now</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Input -->
+    <div class="border-t border-gray-200 p-4 bg-white">
+      <div class="flex space-x-3">
+        <div class="flex-1">
+          <input 
+            id="chat-input" 
+            type="text" 
+            placeholder="Type your message..." 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-anthropic-orange focus:border-anthropic-orange outline-none"
+            maxlength="500"
+          >
+        </div>
+        <button 
+          id="send-button"
+          class="px-6 py-3 bg-anthropic-orange text-white rounded-lg hover:bg-orange-600 focus:ring-2 focus:ring-anthropic-orange focus:ring-offset-2 transition-colors font-medium"
+        >
+          Send
+        </button>
+      </div>
+      <div class="mt-2 text-xs text-gray-500">
+        Press Enter to send • Powered by Anthropic Claude
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Indicator -->
+  <div id="loading-indicator" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-6 flex items-center space-x-3">
+      <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-anthropic-orange"></div>
+      <span class="text-gray-700">AI is thinking...</span>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const chatMessages = document.getElementById('chat-messages');
+  const chatInput = document.getElementById('chat-input');
+  const sendButton = document.getElementById('send-button');
+  const loadingIndicator = document.getElementById('loading-indicator');
+  
+  // Auto-scroll to bottom
+  function scrollToBottom() {
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+  
+  // Add message to chat
+  function addMessage(content, isUser = false, timestamp = null) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'mb-6';
+    
+    const currentTime = timestamp || new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    
+    if (isUser) {
+      messageDiv.innerHTML = `
+        <div class="flex items-start space-x-3 justify-end">
+          <div class="flex-1 max-w-xs sm:max-w-md">
+            <div class="bg-anthropic-orange rounded-lg px-4 py-3 text-white">
+              <p>${content}</p>
+            </div>
+            <div class="text-xs text-gray-500 mt-1 text-right">${currentTime}</div>
+          </div>
+          <div class="flex-shrink-0">
+            <div class="w-8 h-8 bg-gray-400 rounded-full flex items-center justify-center">
+              <span class="text-white text-sm font-medium">You</span>
+            </div>
+          </div>
+        </div>
+      `;
+    } else {
+      messageDiv.innerHTML = `
+        <div class="flex items-start space-x-3">
+          <div class="flex-shrink-0">
+            <div class="w-8 h-8 bg-anthropic-orange rounded-full flex items-center justify-center">
+              <span class="text-white text-sm font-medium">AI</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="bg-white rounded-lg px-4 py-3 shadow-sm border border-gray-200">
+              <div class="prose prose-sm text-gray-800">${content}</div>
+            </div>
+            <div class="text-xs text-gray-500 mt-1">${currentTime}</div>
+          </div>
+        </div>
+      `;
+    }
+    
+    chatMessages.appendChild(messageDiv);
+    scrollToBottom();
+  }
+  
+  // Send message
+  function sendMessage() {
+    const message = chatInput.value.trim();
+    if (!message) return;
+    
+    // Add user message
+    addMessage(message, true);
+    chatInput.value = '';
+    
+    // Show loading
+    loadingIndicator.classList.remove('hidden');
+    
+    // Here we'll integrate with Action Cable
+    // For now, simulate AI response
+    setTimeout(() => {
+      loadingIndicator.classList.add('hidden');
+      
+      // Simulate different responses based on message content
+      let response;
+      if (message.toLowerCase().includes('job') || message.toLowerCase().includes('work')) {
+        response = `
+          <p>I'd be happy to help you find jobs! Based on your query, here are some relevant opportunities:</p>
+          <div class="mt-3 space-y-2">
+            <div class="p-3 bg-gray-50 rounded border-l-4 border-anthropic-orange">
+              <strong>Senior Software Engineer</strong> at TechCorp<br>
+              <span class="text-sm text-gray-600">San Francisco, CA • $150k-$200k • Remote OK</span>
+            </div>
+            <div class="p-3 bg-gray-50 rounded border-l-4 border-anthropic-orange">
+              <strong>Full Stack Developer</strong> at StartupXYZ<br>
+              <span class="text-sm text-gray-600">New York, NY • $120k-$160k • Hybrid</span>
+            </div>
+          </div>
+          <p class="mt-3 text-sm">Would you like me to find more specific opportunities or help you with application strategies?</p>
+        `;
+      } else {
+        response = `<p>Thanks for your message! I'm here to help with job searching, career advice, and finding opportunities. Feel free to ask me about specific roles, companies, or career guidance!</p>`;
+      }
+      
+      addMessage(response, false);
+    }, 1500);
+  }
+  
+  // Event listeners
+  sendButton.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      sendMessage();
+    }
+  });
+  
+  // Focus input on load
+  chatInput.focus();
+});
+</script>
