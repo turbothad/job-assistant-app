@@ -1,0 +1,127 @@
+{
+  "export_info": {
+    "timestamp": "20250826_215342",
+    "total_entries": 5,
+    "keywords": [
+      "chat",
+      "composer",
+      "security",
+      "tradia"
+    ],
+    "date_range": {
+      "start": null,
+      "end": null
+    },
+    "databases_processed": 5
+  },
+  "chats": [
+    {
+      "workspace": {
+        "workspace_id": "ee9c81497944a408799147887674ee20",
+        "db_path": "/Users/thadavery/Library/Application Support/Cursor/User/workspaceStorage/ee9c81497944a408799147887674ee20/state.vscdb",
+        "last_modified": "2025-08-26T21:51:45.937993"
+      },
+      "table": "ItemTable",
+      "columns": [
+        "key",
+        "value"
+      ],
+      "raw_data": {
+        "key": "__$__targetStorageMarker",
+        "value": "{\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"workbench.panel.composerChatViewPane.65293cd3-7450-406c-8784-c8b7daa1597f\":1,\"cursor/needsComposerInitialOpening\":0,\"workbench.auxiliarybar.activepanelid\":1,\"workbench.explorer.treeViewState\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"~remote.forwardedPortsContainer\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"workbench.editor.languageDetectionOpenedLanguages.workspace\":1,\"memento/workbench.parts.editor\":0,\"history.entries\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"workbench.agentMode.exitInfo\":1,\"workbench.panel.aichat.65293cd3-7450-406c-8784-c8b7daa1597f.numberOfVisibleViews\":1,\"notepadData\":1,\"notepad.reactiveStorageId\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"interactive.sessions\":1,\"comments.continueOnComments\":0,\"memento/workbench.editors.files.textFileEditor\":1,\"composer.composerData\":1,\"workbench.view.extensions.state\":1,\"workbench.view.extensions.numberOfVisibleViews\":1,\"memento/workbench.view.extensions\":1,\"workbench.view.scm.numberOfVisibleViews\":1,\"scm.viewState2\":1,\"ms-toolsai.jupyter\":1,\"workbench.view.extension.test.state\":1,\"ms-python.python\":1,\"ms-python.debugpy\":1,\"terminal.integrated.layoutInfo\":1,\"terminal.numberOfVisibleViews\":1}"
+      },
+      "text_content": "key: __$__targetStorageMarker\nvalue: {\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"workbench.panel.composerChatViewPane.65293cd3-7450-406c-8784-c8b7daa1597f\":1,\"cursor/needsComposerInitialOpening\":0,\"workbench.auxiliarybar.activepanelid\":1,\"workbench.explorer.treeViewState\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"~remote.forwardedPortsContainer\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"workbench.editor.languageDetectionOpenedLanguages.workspace\":1,\"memento/workbench.parts.editor\":0,\"history.entries\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"workbench.agentMode.exitInfo\":1,\"workbench.panel.aichat.65293cd3-7450-406c-8784-c8b7daa1597f.numberOfVisibleViews\":1,\"notepadData\":1,\"notepad.reactiveStorageId\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"interactive.sessions\":1,\"comments.continueOnComments\":0,\"memento/workbench.editors.files.textFileEditor\":1,\"composer.composerData\":1,\"workbench.view.extensions.state\":1,\"workbench.view.extensions.numberOfVisibleViews\":1,\"memento/workbench.view.extensions\":1,\"workbench.view.scm.numberOfVisibleViews\":1,\"scm.viewState2\":1,\"ms-toolsai.jupyter\":1,\"workbench.view.extension.test.state\":1,\"ms-python.python\":1,\"ms-python.debugpy\":1,\"terminal.integrated.layoutInfo\":1,\"terminal.numberOfVisibleViews\":1}",
+      "timestamp": null,
+      "matched_keywords": [
+        "chat",
+        "composer"
+      ]
+    },
+    {
+      "workspace": {
+        "workspace_id": "199a4011333f14adae5c218c9098fe20",
+        "db_path": "/Users/thadavery/Library/Application Support/Cursor/User/workspaceStorage/199a4011333f14adae5c218c9098fe20/state.vscdb",
+        "last_modified": "2025-08-26T21:27:50.019041"
+      },
+      "table": "ItemTable",
+      "columns": [
+        "key",
+        "value"
+      ],
+      "raw_data": {
+        "key": "__$__targetStorageMarker",
+        "value": "{\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"workbench.panel.composerChatViewPane.e503ed61-f9e9-4960-9536-538b7ee42078\":1,\"cursor/needsComposerInitialOpening\":0,\"workbench.auxiliarybar.activepanelid\":1,\"workbench.explorer.treeViewState\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"~remote.forwardedPortsContainer\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"lifecyle.lastShutdownReason\":1,\"history.entries\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"workbench.agentMode.exitInfo\":1,\"workbench.panel.aichat.e503ed61-f9e9-4960-9536-538b7ee42078.numberOfVisibleViews\":1,\"notepadData\":1,\"notepad.reactiveStorageId\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"interactive.sessions\":1,\"comments.continueOnComments\":0,\"workbench.backgroundComposer.workspacePersistentData\":1,\"composer.composerData\":1,\"terminal.integrated.layoutInfo\":1}"
+      },
+      "text_content": "key: __$__targetStorageMarker\nvalue: {\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"workbench.panel.composerChatViewPane.e503ed61-f9e9-4960-9536-538b7ee42078\":1,\"cursor/needsComposerInitialOpening\":0,\"workbench.auxiliarybar.activepanelid\":1,\"workbench.explorer.treeViewState\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"~remote.forwardedPortsContainer\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"lifecyle.lastShutdownReason\":1,\"history.entries\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"workbench.agentMode.exitInfo\":1,\"workbench.panel.aichat.e503ed61-f9e9-4960-9536-538b7ee42078.numberOfVisibleViews\":1,\"notepadData\":1,\"notepad.reactiveStorageId\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"interactive.sessions\":1,\"comments.continueOnComments\":0,\"workbench.backgroundComposer.workspacePersistentData\":1,\"composer.composerData\":1,\"terminal.integrated.layoutInfo\":1}",
+      "timestamp": null,
+      "matched_keywords": [
+        "chat",
+        "composer"
+      ]
+    },
+    {
+      "workspace": {
+        "workspace_id": "1756265210320",
+        "db_path": "/Users/thadavery/Library/Application Support/Cursor/User/workspaceStorage/1756265210320/state.vscdb",
+        "last_modified": "2025-08-26T21:27:09.779044"
+      },
+      "table": "ItemTable",
+      "columns": [
+        "key",
+        "value"
+      ],
+      "raw_data": {
+        "key": "__$__targetStorageMarker",
+        "value": "{\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"memento/workspaceTrust\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"~remote.forwardedPortsContainer\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"terminal.integrated.layoutInfo\":1,\"terminal.integrated.bufferState\":1,\"lifecyle.lastShutdownReason\":1,\"history.entries\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"workbench.agentMode.exitInfo\":1,\"notepad.reactiveStorageId\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"notepadData\":1,\"comments.continueOnComments\":0,\"terminal.numberOfVisibleViews\":1,\"workbench.backgroundComposer.workspacePersistentData\":1,\"composer.composerData\":1}"
+      },
+      "text_content": "key: __$__targetStorageMarker\nvalue: {\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"memento/workspaceTrust\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"~remote.forwardedPortsContainer\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"terminal.integrated.layoutInfo\":1,\"terminal.integrated.bufferState\":1,\"lifecyle.lastShutdownReason\":1,\"history.entries\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"workbench.agentMode.exitInfo\":1,\"notepad.reactiveStorageId\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"notepadData\":1,\"comments.continueOnComments\":0,\"terminal.numberOfVisibleViews\":1,\"workbench.backgroundComposer.workspacePersistentData\":1,\"composer.composerData\":1}",
+      "timestamp": null,
+      "matched_keywords": [
+        "composer"
+      ]
+    },
+    {
+      "workspace": {
+        "workspace_id": "1756264239076",
+        "db_path": "/Users/thadavery/Library/Application Support/Cursor/User/workspaceStorage/1756264239076/state.vscdb",
+        "last_modified": "2025-08-26T21:26:21.273598"
+      },
+      "table": "ItemTable",
+      "columns": [
+        "key",
+        "value"
+      ],
+      "raw_data": {
+        "key": "__$__targetStorageMarker",
+        "value": "{\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"memento/workspaceTrust\":1,\"workbench.panel.composerChatViewPane.a7ae8ba9-a572-440b-8a76-bfc93283953b\":1,\"workbench.auxiliarybar.activepanelid\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"~remote.forwardedPortsContainer\":1,\"src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser\":0,\"history.entries\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"notepad.reactiveStorageId\":1,\"workbench.panel.aichat.a7ae8ba9-a572-440b-8a76-bfc93283953b.numberOfVisibleViews\":1,\"notepadData\":1,\"comments.continueOnComments\":0,\"composer.composerData\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"workbench.backgroundComposer.workspacePersistentData\":1,\"workbench.panel.composerChatViewPane.65293cd3-7450-406c-8784-c8b7daa1597f\":1,\"workbench.agentMode.exitInfo\":1,\"workbench.panel.aichat.65293cd3-7450-406c-8784-c8b7daa1597f.numberOfVisibleViews\":1,\"terminal.integrated.layoutInfo\":1,\"terminal.numberOfVisibleViews\":1,\"workbench.editor.languageDetectionOpenedLanguages.workspace\":1,\"memento/workbench.parts.editor\":0,\"memento/workbench.editors.files.textFileEditor\":1,\"terminal.integrated.bufferState\":1,\"lifecyle.lastShutdownReason\":1,\"codelens/cache2\":1}"
+      },
+      "text_content": "key: __$__targetStorageMarker\nvalue: {\"cursorAuth/workspaceOpenedDate\":1,\"workbench.explorer.views.state\":1,\"workbench.view.agents\":1,\"workbench.view.search.state\":1,\"workbench.scm.views.state\":1,\"workbench.panel.markers\":1,\"workbench.panel.output\":1,\"terminal\":1,\"workbench.panel.viewContainersWorkspaceState\":1,\"workbench.auxiliarybar.initialViewContainers\":1,\"workbench.auxiliarybar.viewContainersWorkspaceState\":1,\"memento/workspaceTrust\":1,\"workbench.panel.composerChatViewPane.a7ae8ba9-a572-440b-8a76-bfc93283953b\":1,\"workbench.auxiliarybar.activepanelid\":1,\"debug.selectedroot\":1,\"workbench.view.debug.state\":1,\"output.activechannel\":1,\"workbench.view.extension.gitlensInspect.state\":1,\"workbench.view.extension.gitlens.state\":1,\"workbench.view.extension.privateExtensions.state\":1,\"workbench.view.extension.github-actions.state\":1,\"workbench.view.extension.github-pull-requests.state\":1,\"workbench.view.remote.state\":1,\"workbench.view.extension.liveshare.state\":1,\"~remote.forwardedPortsContainer\":1,\"src.vs.platform.reactivestorage.browser.reactiveStorageServiceImpl.persistentStorage.workspaceUser\":0,\"history.entries\":1,\"aiService.generations\":1,\"aiService.prompts\":1,\"workbench.view.explorer.numberOfVisibleViews\":1,\"workbench.editor.centered\":1,\"workbench.zenMode.active\":1,\"workbench.zenMode.exitInfo\":1,\"workbench.panel.wasLastMaximized\":1,\"workbench.sideBar.position\":1,\"workbench.panel.position\":1,\"workbench.activityBar.hidden\":1,\"workbench.sideBar.hidden\":1,\"workbench.editor.hidden\":1,\"workbench.panel.hidden\":1,\"workbench.auxiliaryBar.hidden\":1,\"workbench.statusBar.hidden\":1,\"notepad.reactiveStorageId\":1,\"workbench.panel.aichat.a7ae8ba9-a572-440b-8a76-bfc93283953b.numberOfVisibleViews\":1,\"notepadData\":1,\"comments.continueOnComments\":0,\"composer.composerData\":1,\"workbench.panel.repl\":1,\"debug.uxstate\":1,\"terminal.integrated.environmentVariableCollectionsV2\":1,\"vscode.git\":1,\"anysphere.cursor-retrieval\":1,\"eamodio.gitlens\":1,\"GitHub.vscode-pull-request-github\":1,\"workbench.backgroundComposer.workspacePersistentData\":1,\"workbench.panel.composerChatViewPane.65293cd3-7450-406c-8784-c8b7daa1597f\":1,\"workbench.agentMode.exitInfo\":1,\"workbench.panel.aichat.65293cd3-7450-406c-8784-c8b7daa1597f.numberOfVisibleViews\":1,\"terminal.integrated.layoutInfo\":1,\"terminal.numberOfVisibleViews\":1,\"workbench.editor.languageDetectionOpenedLanguages.workspace\":1,\"memento/workbench.parts.editor\":0,\"memento/workbench.editors.files.textFileEditor\":1,\"terminal.integrated.bufferState\":1,\"lifecyle.lastShutdownReason\":1,\"codelens/cache2\":1}",
+      "timestamp": null,
+      "matched_keywords": [
+        "chat",
+        "composer"
+      ]
+    },
+    {
+      "workspace": {
+        "workspace_id": "8bbda326ef9a0b05f2d18303318ff211",
+        "db_path": "/Users/thadavery/Library/Application Support/Cursor/User/workspaceStorage/8bbda326ef9a0b05f2d18303318ff211/state.vscdb",
+        "last_modified": "2025-08-26T21:11:20.155380"
+      },
+      "table": "ItemTable",
+      "columns": [
+        "key",
+        "value"
+      ],
+      "raw_data": {
+        "key": "debug.selectedroot",
+        "value": "file:///Users/thadavery/Desktop/tradiaDoble/tradia/.vscode/launch.json"
+      },
+      "text_content": "key: debug.selectedroot\nvalue: file:///Users/thadavery/Desktop/tradiaDoble/tradia/.vscode/launch.json",
+      "timestamp": null,
+      "matched_keywords": [
+        "tradia"
+      ]
+    }
+  ]
+}
